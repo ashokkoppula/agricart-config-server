@@ -1,3 +1,13 @@
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ashokkoppula/agricart-config-server
+
+server:
+  port: 8888
+  search-paths:
+    - '*/'
