@@ -5,3 +5,10 @@ spring:
     show-sql: true
   server:
     port: 8081
+  datasource:
+#    url: jdbc:postgresql://localhost:5432/agricart_product_service
+#    username: ${DB_USER:test}
+#    password: ${DB_PASSWORD:password}
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
