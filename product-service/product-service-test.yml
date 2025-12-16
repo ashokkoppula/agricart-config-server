@@ -1,14 +1,18 @@
-spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-  server:
-    port: 8081
-  datasource:
+server:
+  port: 8081
+
+#spring:
+#  datasource:
+#    # Uncomment and use your DB
 #    url: jdbc:postgresql://localhost:5432/agricart_product_service
 #    username: ${DB_USER:test}
 #    password: ${DB_PASSWORD:password}
-    hikari:
-      maximum-pool-size: 10
-      connection-timeout: 30000
+#
+#    hikari:
+#      maximum-pool-size: 10
+#      connection-timeout: 30000
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true

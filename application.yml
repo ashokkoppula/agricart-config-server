@@ -8,3 +8,6 @@ spring:
         git:
           uri: https://github.com/ashokkoppula/agricart-config-server
           default-label: main
+          search-paths:
+            - '{application}'
+            - '{application}/{profile}'
