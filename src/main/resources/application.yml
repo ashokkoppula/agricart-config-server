@@ -6,8 +6,8 @@ spring:
       server:
         git:
           uri: https://github.com/ashokkoppula/agricart-config-server
+          search-paths:
+            - '{application}'
 
 server:
   port: 8888
-  search-paths:
-    - '*/'
